@@ -89,8 +89,8 @@ def get_stdev(data, case, D, tool, stdev):
 def gettable(data, D, outfilename, sizes, times, stdev):
   print('Getting table, sizes: {0}, times: {1}'.format(sizes, str(times)))
   texfile = open(outfilename, 'w')
-  x = data.keys()
-  print(x)
+  y = sorted(data.keys())
+  print(y)
   columns = 3
   if sizes:
     columns += 9
@@ -113,7 +113,7 @@ def gettable(data, D, outfilename, sizes, times, stdev):
     \\toprule
     ''')
 
-  for key in x:
+  for key in y:
     print(key)
     texfile.write('\\emph{' + key + '}&' + getrow(data, D, str(key), sizes, times, stdev))
     texfile.write('\n')
