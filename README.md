@@ -8,7 +8,7 @@ Experiments should be run only if the mCRL2 binaries of the different versions a
 Then invoke
 
 ```
-python run.py [yamlfile]
+python run.py yamlfile
 ```
 to run the experiments. If a filename is given on the command line, results are put in that file.
 
