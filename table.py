@@ -59,7 +59,9 @@ def getrow(data, D, case, reportsizes, reporttimes, stdev):
       get_mean(data, case, D, 'default_master'), get_stdev(data, case, D, 'default_master', stdev),
       get_mean(data, case, D, 'default_parunfold') , get_stdev(data, case, D, 'default_parunfold', stdev),
       get_mean(data, case, D, 'alternative_parunfold') , get_stdev(data, case, D, 'alternative_parunfold', stdev))
+
   return '{0} \\\\'.format(result)
+
 
 def get_mean(data, case, D, tool):
   x = []
@@ -80,6 +82,7 @@ def get_stdev(data, case, D, tool, stdev):
             'reachability').get('times', {}) != 'outofmemory':
       for d in D:
         x.append(printtime(d, case, tool))
+      #print('SD {}'.format((statistics.stdev(x)*100)/statistics.mean(x)))
       return '(' + str(float('{:.1f}'.format(statistics.stdev(x)))) + ')'
     else:
       return ''
@@ -103,7 +106,6 @@ def gettable(data, D, outfilename, sizes, times, stdev):
     ''')
   texfile.write(
     '\\begin{tabular}{r|c@{\\hspace{6pt}}c@{\\hspace{6pt}}c@{\\hspace{6pt}}c@{\\hspace{6pt}}|r@{\\hspace{6pt}}r@{\\hspace{6pt}}r@{\\hspace{6pt}}r}')
-  texfile.write('\\multicolumn{9}{c}{Reachability} \\\\\\cmidrule{1-9}')
   texfile.write('{0}{1}\\\\'.format('\\multicolumn{1}{c}{Models} &  \\multicolumn{4}{c}{Sizes}' if sizes else '',
                                      ' & \\multicolumn{4}{c}{Times}' if times else ''))
   texfile.write('& {0}{1}\\\\'.format(
