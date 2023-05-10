@@ -1,0 +1,397 @@
+sort: Board, n: 3
+sort: Row, n: 3
+sort: Board, n: 3
+sort: Row, n: 3
+sort: Board, n: 3
+sort: Row, n: 3
+Trying
+number of states = 5479 (time = 16.61s)
+
+Trying
+number of states = 5479 (time = 9.17s)
+
+Trying
+number of states = 5479 (time = 1.29s)
+
+Trying
+number of states = 5479 (time = 1.28s)
+
+sort: Board, n: 3
+sort: Row, n: 4
+sort: Board, n: 3
+sort: Row, n: 4
+sort: Board, n: 3
+sort: Row, n: 4
+Trying
+number of states = 12305 (time = 60.95s)
+
+Trying
+number of states = 12305 (time = 57.87s)
+
+Trying
+number of states = 12305 (time = 1.21s)
+
+Trying
+number of states = 12305 (time = 1.18s)
+
+sort: Board, n: 3
+sort: Row, n: 5
+sort: Board, n: 3
+sort: Row, n: 5
+sort: Board, n: 3
+sort: Row, n: 5
+Trying
+This run crashed
+Trying
+number of states = 171243 (time = 1432.50s)
+
+Trying
+number of states = 171243 (time = 9.56s)
+
+Trying
+number of states = 171243 (time = 9.63s)
+
+sort: Board, n: 4
+sort: Row, n: 3
+sort: Board, n: 4
+sort: Row, n: 3
+sort: Board, n: 4
+sort: Row, n: 3
+Trying
+number of states = 6214 (time = 14.20s)
+
+Trying
+number of states = 6214 (time = 31.63s)
+
+Trying
+number of states = 6214 (time = 0.79s)
+
+Trying
+number of states = 6214 (time = 0.79s)
+
+sort: Board, n: 4
+sort: Row, n: 4
+sort: Board, n: 4
+sort: Row, n: 4
+sort: Board, n: 4
+sort: Row, n: 4
+Trying
+This run crashed
+Trying
+number of states = 187928 (time = 1782.84s)
+
+Trying
+number of states = 187928 (time = 11.51s)
+
+Trying
+number of states = 187928 (time = 10.19s)
+
+sort: Board, n: 4
+sort: Row, n: 5
+sort: Board, n: 4
+sort: Row, n: 5
+sort: Board, n: 4
+sort: Row, n: 5
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+number of states = 5464759 (time = 351.18s)
+
+Trying
+number of states = 5464759 (time = 351.74s)
+
+sort: Board, n: 5
+sort: Row, n: 3
+sort: Board, n: 5
+sort: Row, n: 3
+sort: Board, n: 5
+sort: Row, n: 3
+Trying
+number of states = 44131 (time = 814.04s)
+
+Trying
+number of states = 44131 (time = 403.66s)
+
+Trying
+number of states = 44131 (time = 3.07s)
+
+Trying
+number of states = 44131 (time = 3.09s)
+
+sort: Board, n: 5
+sort: Row, n: 4
+sort: Board, n: 5
+sort: Row, n: 4
+sort: Board, n: 5
+sort: Row, n: 4
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+number of states = 2788682 (time = 162.14s)
+
+Trying
+number of states = 2788682 (time = 163.88s)
+
+sort: Board, n: 5
+sort: Row, n: 5
+sort: Board, n: 5
+sort: Row, n: 5
+sort: Board, n: 5
+sort: Row, n: 5
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+This run crashed
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+Trying
+number of states = 14064 (time = 0.90s)
+
+Trying
+number of states = 14064 (time = 1.03s)
+
+Trying
+number of states = 14064 (time = 0.95s)
+
+Trying
+number of states = 14064 (time = 0.94s)
+
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+Trying
+number of states = 140352 (time = 1.98s)
+
+Trying
+number of states = 140352 (time = 2.18s)
+
+Trying
+number of states = 140352 (time = 1.98s)
+
+Trying
+number of states = 140352 (time = 1.96s)
+
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+Trying
+number of states = 598320 (time = 2.84s)
+
+Trying
+number of states = 598320 (time = 3.15s)
+
+Trying
+number of states = 598320 (time = 2.76s)
+
+Trying
+number of states = 598320 (time = 2.77s)
+
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+sort: DBuf, n: 2
+sort: BBuf, n: 2
+Trying
+number of states = 1731840 (time = 3.76s)
+
+Trying
+number of states = 1731840 (time = 4.44s)
+
+Trying
+number of states = 1731840 (time = 3.60s)
+
+Trying
+number of states = 1731840 (time = 3.59s)
+
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+Trying
+number of states = 2589056 (time = 5.56s)
+
+Trying
+number of states = 2589056 (time = 9.42s)
+
+Trying
+number of states = 2589056 (time = 6.96s)
+
+Trying
+number of states = 2589056 (time = 7.06s)
+
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+Trying
+number of states = 292878336 (time = 132.59s)
+
+Trying
+number of states = 292878336 (time = 173.68s)
+
+Trying
+number of states = 292878336 (time = 105.26s)
+
+Trying
+number of states = 292878336 (time = 127.07s)
+
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+Trying
+number of states = 5729304960 (time = 3066.06s)
+
+Trying
+number of states = 5729304960 (time = 1150.99s)
+
+Trying
+number of states = 5729304960 (time = 727.67s)
+
+Trying
+number of states = 5729304960 (time = 730.12s)
+
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+sort: DBuf, n: 4
+sort: BBuf, n: 4
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+number of states = 50128191488 (time = 2947.09s)
+
+Trying
+number of states = 50128191488 (time = 3004.62s)
+
+sort: DBuf, n: 8
+sort: BBuf, n: 8
+sort: DBuf, n: 8
+sort: BBuf, n: 8
+sort: DBuf, n: 8
+sort: BBuf, n: 8
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+This run crashed
+sort: Sys, n: 1
+sort: Sys, n: 1
+sort: Sys, n: 1
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+This run crashed
+Trying
+number of states = 3 (time = 0.00s)
+
+sort: List(State), n: 4
+sort: State, n: 1
+sort: List(State), n: 4
+sort: State, n: 1
+sort: List(State), n: 4
+sort: State, n: 1
+Trying
+number of states = 1593209 (time = 28.97s)
+
+Trying
+number of states = 1593209 (time = 16.45s)
+
+Trying
+number of states = 1593209 (time = 16.31s)
+
+Trying
+number of states = 1593209 (time = 16.15s)
+
+sort: List(Message), n: 7
+sort: List(Message), n: 7
+sort: List(Message), n: 7
+Trying
+number of states = 7918 (time = 1.75s)
+
+Trying
+number of states = 7918 (time = 2.21s)
+
+Trying
+number of states = 7918 (time = 2.22s)
+
+Trying
+number of states = 7918 (time = 2.11s)
+
+sort: List(Message), n: 10
+sort: List(Message), n: 10
+sort: List(Message), n: 10
+Trying
+number of states = 238931 (time = 31.14s)
+
+Trying
+number of states = 238931 (time = 18.79s)
+
+Trying
+number of states = 238931 (time = 17.65s)
+
+Trying
+number of states = 238931 (time = 14.96s)
+
+sort: List(Message), n: 13
+sort: List(Message), n: 13
+sort: List(Message), n: 13
+Trying
+This run crashed
+Trying
+number of states = 6693054 (time = 425.64s)
+
+Trying
+number of states = 6693054 (time = 418.40s)
+
+Trying
+number of states = 6693054 (time = 337.37s)
+
+sort: List(Job), n: 1
+sort: List(Job), n: 1
+sort: List(Job), n: 1
+Trying
+number of states = 155034776 (time = 15.70s)
+
+Trying
+number of states = 155034776 (time = 22.00s)
+
+Trying
+number of states = 155034776 (time = 16.11s)
+
+Trying
+number of states = 155034776 (time = 15.48s)
+
