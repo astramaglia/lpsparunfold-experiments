@@ -1,0 +1,106 @@
+% This is a small model in which iteratively a desired quality of service is achieved between
+% two processes. The parties propose the quality of service and whence they have proposed it, 
+% this puts a upperbound on the quality that can be attained. They are allowed to propose other 
+% quality of services, but can only effectively lower the end result. 
+% It is possible that a quality of service is negotiated for some round, but lower qualities
+% of service are proposed afterwards in the same round. Such proposals are then ignored. 
+
+sort QOS = Nat;   
+     ID = struct id1 | id2;
+     Message = struct inform(qosp:QOS) | decide(qosd:QOS);
+
+map  None,Max:QOS;      % The number of service levels. 
+                        % None is also used as an indicator that no service level has been reached.. 
+     Levels: Set(Nat);
+     other:ID->ID;
+eqn  Max=3;                  %jfg
+     None=Max;               %jfg
+     other(id1)=id2;
+     other(id2)=id1;
+     Levels = { l : Nat | l < Max };
+
+map  minimum: Set(Nat) -> Nat;
+     MINIMUM: Set(Nat) # Nat -> Nat;
+var  q:Nat; s: Set(Nat); i:Nat;
+eqn  minimum(s) = MINIMUM(s - {None}, None);
+	 
+     % MINIMUM(s,i) = if(exists j:Nat. (j < i && j in s), MINIMUM(s,Int2Nat(i-1)), i); % Termineert niet. 
+     
+	 s=={} ->  MINIMUM(s,i) = i;                   %jfg
+     s!={} ->  MINIMUM(s,i) = MINIMUM(s - {Int2Nat(i-1)}, Int2Nat(i-1));      %jfg
+
+
+%-------------------------------------
+map crtail: List(Message) -> List(Message);
+var x,y:Message;
+ xs: List(Message);
+eqn crtail([]) = [];
+	crtail(x |> []) = [];
+	crtail(x |> y |> xs) = x |> crtail(y |> xs);
+
+map crhead: List(Message) -> Message;
+var x,y: Message;
+    xs: List(Message);
+eqn crhead([]) = decide(0);
+    crhead(x |> []) = x; 
+	crhead(x |> y |> xs) = crhead(y |> xs);
+%-------------------------------------------
+          
+act  s,r,r_q,s_q,in_q,out_q:ID#Message;
+     propose, agreed: ID#QOS;
+
+%proc Q(id:ID,q:List(Message))= sum m:Message. (#q < 8) -> r_q(id, m). Q(id, m|>q) +
+%                                (q != []) -> s_q(id,crhead(q)).Q(id, crtail(q)); % ADDED
+
+proc Q(id:ID,q:List(Message))= sum m:Message.r_q(id, m). Q(id, m|>q) +
+                               (#q > 0) -> s_q(id,crhead(q)).Q(id, crtail(q));
+
+proc P(id, from:ID, mine: Set(QOS), theirs: QOS, decision: QOS, hold:Bool)
+=
+     P_env() + P_other();
+
+
+proc P_env(id, from:ID, mine: Set(QOS), theirs: QOS, decision: QOS, hold:Bool)
+=
+    (decision==None) -> P_negotiate() <> P_decide();
+
+proc P_decide(id, from:ID, mine: Set(QOS), theirs: QOS, decision: QOS, hold:Bool)
+=
+    agreed(id,decision).P(decision=None) +
+    sum l:QOS. (l in Levels) -> propose(id,l). P();
+
+ 
+proc P_negotiate(id, from:ID, mine: Set(QOS), theirs: QOS, decision: QOS, hold:Bool)
+=
+    sum l:QOS.(l in Levels) -> propose(id,l).
+                ((minimum(mine) > l && theirs >= l) 
+                 -> ((l == theirs)
+                       -> s(id,decide(l)).P(mine={}, theirs=None, decision=l, hold=true) 
+                       <> s(id,inform(l)).P(mine=mine + {l})
+                     ) 
+                 <> P() 
+                 );
+
+proc P_other(id, from:ID, mine: Set(QOS), theirs: QOS, decision: QOS, hold:Bool)
+=
+    (hold) -> sum l:QOS. ( r(from,inform(l)). P()
+                                  + r(from,decide(l)). P(hold = false)
+                                  )
+                    <>
+                        sum l:QOS. ( r(from,inform(l)).( (l in mine && decision==None)
+                                                                   -> s(id,decide(l)).P(mine={}, theirs=None, decision=l, hold=true)
+                                                                   <> P(theirs=min(theirs,l))) 
+                                   + r(from,decide(l)). s(id,decide(l)).P(mine={}, theirs=None, decision=l)
+                                   );
+
+init allow({in_q,
+            out_q,
+            propose,
+            agreed
+           },
+      comm({ s|r_q -> in_q,
+             r|s_q -> out_q},
+       P(id1,id2,{},None,None,false)||Q(id1,[])||Q(id2,[])||P(id2,id1,{},None,None,false)));
+
+
+

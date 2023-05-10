@@ -1,0 +1,32 @@
+sort
+	Sys = struct sys(get_state: State, get_n: Nat) | uninit;
+	State = struct p_on | p_off;
+
+map
+	set_state: Sys # State -> Sys;
+	set_n: Sys # Nat -> Sys;
+var
+	s: Sys;
+	s1,s2: State;
+	n,m: Nat;
+
+eqn
+	set_state(uninit, s1) = uninit;
+  	set_state(sys(s1,n), s2) = sys(s2,n);
+	set_n(uninit, m) = uninit;
+	set_n(sys(s1,n), m) = sys(s1,m);
+
+act
+	on, off, initialize;
+
+glob dc1,dc2: Nat;
+
+proc
+  P(s_Sys : Sys) =
+	(s_Sys == uninit) -> initialize . P(sys(p_off, dc1))
+  + sum n: Nat . (s_Sys != uninit && get_state(s_Sys) == p_off)
+		-> on . P(set_state(set_n(s_Sys, n), p_on))
+  + (s_Sys != uninit && get_state(s_Sys) == p_on)
+  		-> off . P(set_state(set_n(s_Sys, dc2), p_off));
+
+init P(uninit);

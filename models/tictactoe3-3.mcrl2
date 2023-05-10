@@ -1,0 +1,78 @@
+% This file shows the game tic-tac-toe modelled using
+% functions.
+%
+% This example is used to generate the state space of this game
+% to which a reference is made in the Coursera specialisation on System
+% validation made in 2015.
+%
+% Jan Friso Groote, March 2015.
+
+sort Piece = struct empty | naught | cross;
+     Row = List(Piece);
+     Board = List(Row);
+
+map N:Pos;
+eqn N=3;     % (default 3)
+
+
+map  empty_board:Board;
+     other:Piece->Piece;
+     get:Nat#Nat#Board -> Piece;
+     get:Nat#Row -> Piece;
+     set:Nat#Nat#Piece#Board -> Board;
+     set:Nat#Piece#Row -> Row;
+     did_win:Piece#Board->Bool;
+	 emptyList: Nat -> Row;
+	 emptyBoard: Nat # Nat-> Board;
+
+var  b:Board;
+     r:Row;
+     p,p':Piece;
+     i,j:Nat;
+	 m,m':Nat;
+eqn % empty_board=[[empty, empty, empty],
+     %             [empty, empty, empty],
+      %            [empty, empty, empty]];
+     other(naught)=cross;
+     other(cross)=naught;
+	
+	 get(i,j,[]) = empty;
+     get(i,[]) = empty;
+     set(i,p,[]) = [];
+     set(i,j,p,[]) = [];
+     j == 0 -> get(i,j,r|>b) = get(i,r);
+     j > 0 -> get(i,j,r|>b) = get(i,Int2Nat(j-1),b);
+     i == 0 -> get(i,p|>r) = p;
+     i > 0 -> get(i,p|>r) = get(Int2Nat(i-1), r);
+     j==0 -> set(i,j,p,r|>b)=set(i,p,r)|>b;
+     j>0  -> set(i,j,p,r|>b)=r|>set(i,max(0,j-1),p,b);
+     i==0 -> set(i,p,p'|>r)=p|>r;
+     i>0  -> set(i,p,p'|>r)=p'|>set(max(0,i-1),p,r);
+	 emptyList(0) = [];
+	 (m > 0) -> emptyList(m) = empty |> emptyList(Int2Nat(m-1));
+	 emptyBoard(0,m) = [];
+	 (m' > 0 && m > 0) -> emptyBoard(m', m) = emptyList(m) |> emptyBoard(Int2Nat(m'-1), m);
+	 empty_board = emptyBoard(N, N);
+	 
+var  b:Board;
+     p:Piece;
+
+eqn  did_win(p,b)= (exists i:Nat . i<N && (forall j:Nat . j<N => get(i,j,b) ==p)) ||
+					(exists j:Nat. j<N && (forall i:Nat . i<N => get(i,j,b) ==p)) ||
+					(forall i,j:Nat . i<N && j<N && i==j => get(i,j,b) == p) ||
+					(forall i,j:Nat . i<N && j<N && i+j==(N-1) => get(i,j,b) == p); 
+%(exists i:Nat.(i<3 && get(i,0,b)==p && get(i,1,b)==p && get(i,2,b)==p)) ||
+%                  (exists j:Nat.(j<3 && get(0,j,b)==p && get(1,j,b)==p && get(2,j,b)==p)) ||
+%                  (get(0,0,b)==p && get(1,1,b)==p && get(2,2,b)==p) ||
+%                  (get(0,2,b)==p && get(1,1,b)==p && get(2,0,b)==p);
+
+act  win:Piece;
+     put:Piece#Nat#Nat;
+proc TicTacToe(board:Board, player:Piece)=
+       did_win(other(player),board)
+          -> win(other(player)).delta
+          <> ( sum i,j:Nat.(i<N && j<N && get(i,j,board)==empty)->
+                put(player,i,j).
+                TicTacToe(set(i,j,player,board),other(player)));
+
+init TicTacToe(empty_board,cross);

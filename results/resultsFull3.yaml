@@ -1,0 +1,5660 @@
+tictactoe3-3:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/tictactoe3-3.mcrl2
+      output_file: /scratch/anna/models3/tictactoe3-3.lps
+      time: 0.12196469306945801
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/tictactoe3-3.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      time: 0.03030848503112793
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      time: 0.03574228286743164
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      time: 0.01819467544555664
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      time: 0.016589879989624023
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/tictactoe3-3.static_only.lps
+      size: '5479'
+      time: 12.630445957183838
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/tictactoe3-3.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.0017473697662353516
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.0018591880798339844
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      time: 0.04839158058166504
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      time: 0.0817110538482666
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      time: 0.021413087844848633
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      time: 0.023001909255981445
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/tictactoe3-3.default_master.lps
+      size: '5479'
+      time: 9.64426565170288
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/tictactoe3-3.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.0017838478088378906
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.0018894672393798828
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      time: 0.04988718032836914
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      time: 0.08328509330749512
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      time: 0.01520681381225586
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      time: 0.018216371536254883
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/tictactoe3-3.default_parunfold.lps
+      size: '5479'
+      time: 1.4909756183624268
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/tictactoe3-3.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n3
+        time: 0.0017757415771484375
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n3
+        time: 0.002001523971557617
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      time: 0.049285173416137695
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      time: 0.0759429931640625
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      time: 0.017518997192382812
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      time: 0.019128084182739258
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/tictactoe3-3.alternative_parunfold.lps
+      size: '5479'
+      time: 1.499680995941162
+fourinarow3-4:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow3-4.mcrl2
+      output_file: /scratch/anna/models3/fourinarow3-4.lps
+      time: 0.15045952796936035
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-4.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      time: 0.03243541717529297
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      time: 0.0409703254699707
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      time: 0.017499685287475586
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      time: 0.016793012619018555
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-4.static_only.lps
+      size: '12305'
+      time: 66.23277354240417
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-4.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.0016939640045166016
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.0019707679748535156
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      time: 0.05180668830871582
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      time: 0.10226273536682129
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      time: 0.03370857238769531
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      time: 0.028435468673706055
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-4.default_master.lps
+      size: '12305'
+      time: 59.255632162094116
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-4.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.0017871856689453125
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.002073526382446289
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      time: 0.05277824401855469
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      time: 0.1493685245513916
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      time: 0.01947617530822754
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      time: 0.019648075103759766
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-4.default_parunfold.lps
+      size: '12305'
+      time: 1.5166223049163818
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-4.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n3
+        time: 0.0017368793487548828
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n4
+        time: 0.0016217231750488281
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      time: 0.07305765151977539
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      time: 0.10755419731140137
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      time: 0.017852783203125
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      time: 0.018174171447753906
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-4.alternative_parunfold.lps
+      size: '12305'
+      time: 1.52156400680542
+fourinarow3-5:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow3-5.mcrl2
+      output_file: /scratch/anna/models3/fourinarow3-5.lps
+      time: 0.1544322967529297
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-5.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      time: 0.03681230545043945
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      time: 0.05721163749694824
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      time: 0.01886892318725586
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      time: 0.0193789005279541
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-5.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-5.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.001809835433959961
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.0019059181213378906
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      time: 0.06075119972229004
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      time: 0.13036203384399414
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      time: 0.035758018493652344
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      time: 0.03945732116699219
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-5.default_master.lps
+      size: '171243'
+      time: 1429.397316455841
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-5.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n3
+        time: 0.0017724037170410156
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.001984119415283203
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      time: 0.05648183822631836
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      time: 0.18347454071044922
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      time: 0.019783973693847656
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      time: 0.01604151725769043
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-5.default_parunfold.lps
+      size: '171243'
+      time: 9.940873861312866
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow3-5.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n3
+        time: 0.0013871192932128906
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n5
+        time: 0.001974821090698242
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      time: 0.09159207344055176
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      time: 0.1367332935333252
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      time: 0.018594741821289062
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      time: 0.01877117156982422
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow3-5.alternative_parunfold.lps
+      size: '171243'
+      time: 9.954976320266724
+fourinarow4-3:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow4-3.mcrl2
+      output_file: /scratch/anna/models3/fourinarow4-3.lps
+      time: 0.14610505104064941
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-3.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      time: 0.033049583435058594
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      time: 0.05271553993225098
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      time: 0.017475366592407227
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      time: 0.017519474029541016
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-3.static_only.lps
+      size: '6214'
+      time: 14.558774709701538
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-3.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.0017476081848144531
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.0019652843475341797
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      time: 0.0501554012298584
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      time: 0.1105339527130127
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      time: 0.035680532455444336
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      time: 0.031004905700683594
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-3.default_master.lps
+      size: '6214'
+      time: 32.22142267227173
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-3.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.0017211437225341797
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.0020008087158203125
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      time: 0.05183815956115723
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      time: 0.13525915145874023
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      time: 0.019423961639404297
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      time: 0.016909122467041016
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-3.default_parunfold.lps
+      size: '6214'
+      time: 0.9684443473815918
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-3.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n4
+        time: 0.00186920166015625
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n3
+        time: 0.002111673355102539
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      time: 0.06454348564147949
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      time: 0.07923603057861328
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      time: 0.018409013748168945
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      time: 0.01897740364074707
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-3.alternative_parunfold.lps
+      size: '6214'
+      time: 0.9479024410247803
+fourinarow4-4:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow4-4.mcrl2
+      output_file: /scratch/anna/models3/fourinarow4-4.lps
+      time: 0.15892362594604492
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-4.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      time: 0.0366520881652832
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      time: 0.050696611404418945
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      time: 0.01747441291809082
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      time: 0.018450260162353516
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-4.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-4.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.0017080307006835938
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.0020074844360351562
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      time: 0.07244873046875
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      time: 0.1556379795074463
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      time: 0.05276203155517578
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      time: 0.04337191581726074
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-4.default_master.lps
+      size: '187928'
+      time: 1799.2015554904938
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-4.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.0018813610076904297
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.002088785171508789
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      time: 0.06574559211730957
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      time: 0.19586586952209473
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      time: 0.02053356170654297
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      time: 0.019792556762695312
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-4.default_parunfold.lps
+      size: '187928'
+      time: 10.513875007629395
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-4.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n4
+        time: 0.0018210411071777344
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n4
+        time: 0.0018260478973388672
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      time: 0.08097410202026367
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      time: 0.13316106796264648
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      time: 0.01971149444580078
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      time: 0.020522356033325195
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-4.alternative_parunfold.lps
+      size: '187928'
+      time: 10.336050033569336
+fourinarow4-5:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow4-5.mcrl2
+      output_file: /scratch/anna/models3/fourinarow4-5.lps
+      time: 0.1592698097229004
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-5.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      time: 0.03512907028198242
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      time: 0.061327457427978516
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      time: 0.016286611557006836
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      time: 0.018956899642944336
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-5.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-5.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.0013763904571533203
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.0019443035125732422
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      time: 0.09554743766784668
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      time: 0.20931172370910645
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      time: 0.07546567916870117
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      time: 0.07015681266784668
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-5.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-5.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n4
+        time: 0.001819610595703125
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.002001523971557617
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      time: 0.0783700942993164
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      time: 0.3040335178375244
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      time: 0.020374298095703125
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      time: 0.019932270050048828
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-5.default_parunfold.lps
+      size: '5464759'
+      time: 359.05334281921387
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow4-5.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n4
+        time: 0.0015385150909423828
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n5
+        time: 0.0019202232360839844
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      time: 0.11810731887817383
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      time: 0.21100616455078125
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      time: 0.01941704750061035
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      time: 0.019876480102539062
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow4-5.alternative_parunfold.lps
+      size: '5464759'
+      time: 347.6753001213074
+fourinarow5-3:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow5-3.mcrl2
+      output_file: /scratch/anna/models3/fourinarow5-3.lps
+      time: 0.1315593719482422
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-3.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      time: 0.038739681243896484
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      time: 0.05154609680175781
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      time: 0.019500255584716797
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      time: 0.017021656036376953
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-3.static_only.lps
+      size: '44131'
+      time: 843.9558036327362
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-3.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0016803741455078125
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.002010345458984375
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      time: 0.06485199928283691
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      time: 0.15932178497314453
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      time: 0.04592275619506836
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      time: 0.04812359809875488
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-3.default_master.lps
+      size: '44131'
+      time: 402.1672315597534
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-3.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0019350051879882812
+      - options:
+        - -v
+        - -sRow
+        - -n3
+        time: 0.0019969940185546875
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      time: 0.06589269638061523
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      time: 0.20403671264648438
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      time: 0.01978611946105957
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      time: 0.019433259963989258
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-3.default_parunfold.lps
+      size: '44131'
+      time: 3.2376816272735596
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-3.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n5
+        time: 0.0017349720001220703
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n3
+        time: 0.0020334720611572266
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      time: 0.07151031494140625
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      time: 0.12161517143249512
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      time: 0.018903732299804688
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      time: 0.01958775520324707
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-3.alternative_parunfold.lps
+      size: '44131'
+      time: 3.274343729019165
+fourinarow5-4:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow5-4.mcrl2
+      output_file: /scratch/anna/models3/fourinarow5-4.lps
+      time: 0.16220545768737793
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-4.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      time: 0.034623146057128906
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      time: 0.06097269058227539
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      time: 0.01798105239868164
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      time: 0.019159793853759766
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-4.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-4.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0017571449279785156
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.0020589828491210938
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      time: 0.10107779502868652
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      time: 0.23401808738708496
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      time: 0.08214545249938965
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      time: 0.07613825798034668
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-4.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-4.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0015044212341308594
+      - options:
+        - -v
+        - -sRow
+        - -n4
+        time: 0.0019080638885498047
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      time: 0.07781147956848145
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      time: 0.3950536251068115
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      time: 0.020182132720947266
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      time: 0.018138885498046875
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-4.default_parunfold.lps
+      size: '2788682'
+      time: 160.99067497253418
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-4.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n5
+        time: 0.001445770263671875
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n4
+        time: 0.0019183158874511719
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      time: 0.09250712394714355
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      time: 0.15618395805358887
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      time: 0.018597841262817383
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      time: 0.017395496368408203
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-4.alternative_parunfold.lps
+      size: '2788682'
+      time: 161.060400724411
+fourinarow5-5:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/fourinarow5-5.mcrl2
+      output_file: /scratch/anna/models3/fourinarow5-5.lps
+      time: 0.17651963233947754
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-5.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      time: 0.039919137954711914
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      time: 0.06264948844909668
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      time: 0.01791834831237793
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      time: 0.018854856491088867
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-5.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-5.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0016968250274658203
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.0020093917846679688
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      time: 0.13882017135620117
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      time: 0.3228926658630371
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      time: 0.12763452529907227
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      time: 0.11907315254211426
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-5.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-5.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sBoard
+        - -n5
+        time: 0.0017147064208984375
+      - options:
+        - -v
+        - -sRow
+        - -n5
+        time: 0.0019388198852539062
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      time: 0.10015130043029785
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      time: 0.5634129047393799
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      time: 0.02056145668029785
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      time: 0.020345211029052734
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-5.default_parunfold.lps
+      times: timeout
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/fourinarow5-5.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sBoard
+        - -n5
+        time: 0.0017440319061279297
+      - options:
+        - -v
+        - -a
+        - -sRow
+        - -n5
+        time: 0.00201416015625
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      time: 0.11587214469909668
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      time: 0.3100764751434326
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      time: 0.018297195434570312
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      time: 0.01497197151184082
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/fourinarow5-5.alternative_parunfold.lps
+      times: timeout
+swp2-2:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp2-2.mcrl2
+      output_file: /scratch/anna/models3/swp2-2.lps
+      time: 0.10747790336608887
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-2.lps
+      output_file: /scratch/anna/models3/swp2-2.static_only.lps
+      time: 0.030636072158813477
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-2.static_only.lps
+      output_file: /scratch/anna/models3/swp2-2.static_only.lps
+      time: 0.0460047721862793
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.static_only.lps
+      output_file: /scratch/anna/models3/swp2-2.static_only.lps
+      time: 0.015692949295043945
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.static_only.lps
+      output_file: /scratch/anna/models3/swp2-2.static_only.lps
+      time: 0.01790618896484375
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-2.static_only.lps
+      size: '14064'
+      time: 1.1818277835845947
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-2.lps
+      output_file: /scratch/anna/models3/swp2-2.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.001832723617553711
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.001984834671020508
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-2.default_master.lps
+      output_file: /scratch/anna/models3/swp2-2.default_master.lps
+      time: 0.04465222358703613
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-2.default_master.lps
+      output_file: /scratch/anna/models3/swp2-2.default_master.lps
+      time: 0.05578947067260742
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.default_master.lps
+      output_file: /scratch/anna/models3/swp2-2.default_master.lps
+      time: 0.0193636417388916
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.default_master.lps
+      output_file: /scratch/anna/models3/swp2-2.default_master.lps
+      time: 0.017694473266601562
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-2.default_master.lps
+      size: '14064'
+      time: 1.2665126323699951
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-2.lps
+      output_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.001827239990234375
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0020062923431396484
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      time: 0.04766678810119629
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      time: 0.06094002723693848
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      time: 0.01844024658203125
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      time: 0.01844024658203125
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-2.default_parunfold.lps
+      size: '14064'
+      time: 1.207371473312378
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-2.lps
+      output_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n2
+        time: 0.0018265247344970703
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n2
+        time: 0.0020051002502441406
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      time: 0.052959442138671875
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      time: 0.06600093841552734
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      time: 0.018674850463867188
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      time: 0.018749713897705078
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-2.alternative_parunfold.lps
+      size: '14064'
+      time: 1.191840648651123
+swp2-4:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp2-4.mcrl2
+      output_file: /scratch/anna/models3/swp2-4.lps
+      time: 0.10143542289733887
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-4.lps
+      output_file: /scratch/anna/models3/swp2-4.static_only.lps
+      time: 0.03357434272766113
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-4.static_only.lps
+      output_file: /scratch/anna/models3/swp2-4.static_only.lps
+      time: 0.03967022895812988
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.static_only.lps
+      output_file: /scratch/anna/models3/swp2-4.static_only.lps
+      time: 0.014419794082641602
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.static_only.lps
+      output_file: /scratch/anna/models3/swp2-4.static_only.lps
+      time: 0.013978958129882812
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-4.static_only.lps
+      size: '140352'
+      time: 2.429208278656006
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-4.lps
+      output_file: /scratch/anna/models3/swp2-4.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.0017938613891601562
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0020186901092529297
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-4.default_master.lps
+      output_file: /scratch/anna/models3/swp2-4.default_master.lps
+      time: 0.0457911491394043
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-4.default_master.lps
+      output_file: /scratch/anna/models3/swp2-4.default_master.lps
+      time: 0.053816795349121094
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.default_master.lps
+      output_file: /scratch/anna/models3/swp2-4.default_master.lps
+      time: 0.017115116119384766
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.default_master.lps
+      output_file: /scratch/anna/models3/swp2-4.default_master.lps
+      time: 0.016349315643310547
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-4.default_master.lps
+      size: '140352'
+      time: 2.5091047286987305
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-4.lps
+      output_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.001982450485229492
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0020530223846435547
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      time: 0.04901266098022461
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      time: 0.06083416938781738
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      time: 0.01773381233215332
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      time: 0.018878698348999023
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-4.default_parunfold.lps
+      size: '140352'
+      time: 2.3959054946899414
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-4.lps
+      output_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n2
+        time: 0.0017614364624023438
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n2
+        time: 0.0019979476928710938
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      time: 0.05462241172790527
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      time: 0.0709683895111084
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      time: 0.016491174697875977
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      time: 0.018635034561157227
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-4.alternative_parunfold.lps
+      size: '140352'
+      time: 2.380375385284424
+swp2-6:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp2-6.mcrl2
+      output_file: /scratch/anna/models3/swp2-6.lps
+      time: 0.08596014976501465
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-6.lps
+      output_file: /scratch/anna/models3/swp2-6.static_only.lps
+      time: 0.025202512741088867
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-6.static_only.lps
+      output_file: /scratch/anna/models3/swp2-6.static_only.lps
+      time: 0.04495072364807129
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.static_only.lps
+      output_file: /scratch/anna/models3/swp2-6.static_only.lps
+      time: 0.015946388244628906
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.static_only.lps
+      output_file: /scratch/anna/models3/swp2-6.static_only.lps
+      time: 0.016797304153442383
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-6.static_only.lps
+      size: '598320'
+      time: 3.3073415756225586
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-6.lps
+      output_file: /scratch/anna/models3/swp2-6.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.001771688461303711
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0019910335540771484
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-6.default_master.lps
+      output_file: /scratch/anna/models3/swp2-6.default_master.lps
+      time: 0.039633989334106445
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-6.default_master.lps
+      output_file: /scratch/anna/models3/swp2-6.default_master.lps
+      time: 0.05507683753967285
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.default_master.lps
+      output_file: /scratch/anna/models3/swp2-6.default_master.lps
+      time: 0.018790483474731445
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.default_master.lps
+      output_file: /scratch/anna/models3/swp2-6.default_master.lps
+      time: 0.016979217529296875
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-6.default_master.lps
+      size: '598320'
+      time: 3.5528130531311035
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-6.lps
+      output_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.0017123222351074219
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0020308494567871094
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      time: 0.0431671142578125
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      time: 0.06118345260620117
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      time: 0.017941713333129883
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      time: 0.01902031898498535
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-6.default_parunfold.lps
+      size: '598320'
+      time: 3.2010066509246826
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-6.lps
+      output_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n2
+        time: 0.0015099048614501953
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n2
+        time: 0.0020112991333007812
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      time: 0.04831194877624512
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      time: 0.0679476261138916
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      time: 0.01858234405517578
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      time: 0.019205570220947266
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-6.alternative_parunfold.lps
+      size: '598320'
+      time: 3.171811580657959
+swp2-8:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp2-8.mcrl2
+      output_file: /scratch/anna/models3/swp2-8.lps
+      time: 0.1063690185546875
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-8.lps
+      output_file: /scratch/anna/models3/swp2-8.static_only.lps
+      time: 0.030784130096435547
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-8.static_only.lps
+      output_file: /scratch/anna/models3/swp2-8.static_only.lps
+      time: 0.04343056678771973
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.static_only.lps
+      output_file: /scratch/anna/models3/swp2-8.static_only.lps
+      time: 0.017455339431762695
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.static_only.lps
+      output_file: /scratch/anna/models3/swp2-8.static_only.lps
+      time: 0.01627349853515625
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-8.static_only.lps
+      size: '1731840'
+      time: 4.170093297958374
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-8.lps
+      output_file: /scratch/anna/models3/swp2-8.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.001760244369506836
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0019905567169189453
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-8.default_master.lps
+      output_file: /scratch/anna/models3/swp2-8.default_master.lps
+      time: 0.045328378677368164
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-8.default_master.lps
+      output_file: /scratch/anna/models3/swp2-8.default_master.lps
+      time: 0.05556750297546387
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.default_master.lps
+      output_file: /scratch/anna/models3/swp2-8.default_master.lps
+      time: 0.0185396671295166
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.default_master.lps
+      output_file: /scratch/anna/models3/swp2-8.default_master.lps
+      time: 0.018631696701049805
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-8.default_master.lps
+      size: '1731840'
+      time: 4.828041076660156
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-8.lps
+      output_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n2
+        time: 0.0017960071563720703
+      - options:
+        - -v
+        - -sBBuf
+        - -n2
+        time: 0.0019659996032714844
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      time: 0.047875165939331055
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      time: 0.061116933822631836
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      time: 0.01745772361755371
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      time: 0.018800020217895508
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-8.default_parunfold.lps
+      size: '1731840'
+      time: 3.979938507080078
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp2-8.lps
+      output_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n2
+        time: 0.0018651485443115234
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n2
+        time: 0.001827239990234375
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      time: 0.05111360549926758
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      time: 0.06750893592834473
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      time: 0.018244028091430664
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      time: 0.019150972366333008
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp2-8.alternative_parunfold.lps
+      size: '1731840'
+      time: 4.024448871612549
+swp4-2:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp4-2.mcrl2
+      output_file: /scratch/anna/models3/swp4-2.lps
+      time: 0.10156464576721191
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-2.lps
+      output_file: /scratch/anna/models3/swp4-2.static_only.lps
+      time: 0.03179812431335449
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-2.static_only.lps
+      output_file: /scratch/anna/models3/swp4-2.static_only.lps
+      time: 0.039951324462890625
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.static_only.lps
+      output_file: /scratch/anna/models3/swp4-2.static_only.lps
+      time: 0.017543554306030273
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.static_only.lps
+      output_file: /scratch/anna/models3/swp4-2.static_only.lps
+      time: 0.016844987869262695
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-2.static_only.lps
+      size: '2589056'
+      time: 5.893220663070679
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-2.lps
+      output_file: /scratch/anna/models3/swp4-2.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0018241405487060547
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.0020945072174072266
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-2.default_master.lps
+      output_file: /scratch/anna/models3/swp4-2.default_master.lps
+      time: 0.044916391372680664
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-2.default_master.lps
+      output_file: /scratch/anna/models3/swp4-2.default_master.lps
+      time: 0.054357290267944336
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.default_master.lps
+      output_file: /scratch/anna/models3/swp4-2.default_master.lps
+      time: 0.01844024658203125
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.default_master.lps
+      output_file: /scratch/anna/models3/swp4-2.default_master.lps
+      time: 0.019055604934692383
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-2.default_master.lps
+      size: '2589056'
+      time: 9.879045963287354
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-2.lps
+      output_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0018086433410644531
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.0020978450775146484
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      time: 0.042613983154296875
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      time: 0.0619664192199707
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      time: 0.018813610076904297
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      time: 0.01738715171813965
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-2.default_parunfold.lps
+      size: '2589056'
+      time: 7.3839335441589355
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-2.lps
+      output_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n4
+        time: 0.0016222000122070312
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n4
+        time: 0.0020341873168945312
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      time: 0.04780435562133789
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      time: 0.06930184364318848
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      time: 0.018241167068481445
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      time: 0.019403457641601562
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-2.alternative_parunfold.lps
+      size: '2589056'
+      time: 7.369736194610596
+swp4-4:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp4-4.mcrl2
+      output_file: /scratch/anna/models3/swp4-4.lps
+      time: 0.10423636436462402
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-4.lps
+      output_file: /scratch/anna/models3/swp4-4.static_only.lps
+      time: 0.036505937576293945
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-4.static_only.lps
+      output_file: /scratch/anna/models3/swp4-4.static_only.lps
+      time: 0.044972896575927734
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.static_only.lps
+      output_file: /scratch/anna/models3/swp4-4.static_only.lps
+      time: 0.013242721557617188
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.static_only.lps
+      output_file: /scratch/anna/models3/swp4-4.static_only.lps
+      time: 0.017331600189208984
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-4.static_only.lps
+      size: '292878336'
+      time: 134.6285490989685
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-4.lps
+      output_file: /scratch/anna/models3/swp4-4.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0017664432525634766
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.002006053924560547
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-4.default_master.lps
+      output_file: /scratch/anna/models3/swp4-4.default_master.lps
+      time: 0.04408597946166992
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-4.default_master.lps
+      output_file: /scratch/anna/models3/swp4-4.default_master.lps
+      time: 0.05444169044494629
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.default_master.lps
+      output_file: /scratch/anna/models3/swp4-4.default_master.lps
+      time: 0.018398046493530273
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.default_master.lps
+      output_file: /scratch/anna/models3/swp4-4.default_master.lps
+      time: 0.019063472747802734
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-4.default_master.lps
+      size: '292878336'
+      time: 176.34150886535645
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-4.lps
+      output_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0018219947814941406
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.0021038055419921875
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      time: 0.049471139907836914
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      time: 0.05587291717529297
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      time: 0.0180356502532959
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      time: 0.018427371978759766
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-4.default_parunfold.lps
+      size: '292878336'
+      time: 106.64980745315552
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-4.lps
+      output_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n4
+        time: 0.0016527175903320312
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n4
+        time: 0.0019741058349609375
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      time: 0.05463147163391113
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      time: 0.061331987380981445
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      time: 0.018380165100097656
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      time: 0.01871800422668457
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-4.alternative_parunfold.lps
+      size: '292878336'
+      time: 121.42057132720947
+swp4-6:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp4-6.mcrl2
+      output_file: /scratch/anna/models3/swp4-6.lps
+      time: 0.10743069648742676
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-6.lps
+      output_file: /scratch/anna/models3/swp4-6.static_only.lps
+      time: 0.036809444427490234
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-6.static_only.lps
+      output_file: /scratch/anna/models3/swp4-6.static_only.lps
+      time: 0.04671764373779297
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.static_only.lps
+      output_file: /scratch/anna/models3/swp4-6.static_only.lps
+      time: 0.01813960075378418
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.static_only.lps
+      output_file: /scratch/anna/models3/swp4-6.static_only.lps
+      time: 0.016822099685668945
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-6.static_only.lps
+      size: '5729304960'
+      time: 2968.1434495449066
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-6.lps
+      output_file: /scratch/anna/models3/swp4-6.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0017771720886230469
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.002022981643676758
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-6.default_master.lps
+      output_file: /scratch/anna/models3/swp4-6.default_master.lps
+      time: 0.0441889762878418
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-6.default_master.lps
+      output_file: /scratch/anna/models3/swp4-6.default_master.lps
+      time: 0.055701494216918945
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.default_master.lps
+      output_file: /scratch/anna/models3/swp4-6.default_master.lps
+      time: 0.017983436584472656
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.default_master.lps
+      output_file: /scratch/anna/models3/swp4-6.default_master.lps
+      time: 0.018445730209350586
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-6.default_master.lps
+      size: '5729304960'
+      time: 1169.61691904068
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-6.lps
+      output_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0017957687377929688
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.002086639404296875
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      time: 0.047327280044555664
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      time: 0.06352114677429199
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      time: 0.0175628662109375
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      time: 0.018925189971923828
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-6.default_parunfold.lps
+      size: '5729304960'
+      time: 721.3645617961884
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-6.lps
+      output_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n4
+        time: 0.001756906509399414
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n4
+        time: 0.0020203590393066406
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      time: 0.05281329154968262
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      time: 0.06884765625
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      time: 0.019318819046020508
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      time: 0.019533872604370117
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-6.alternative_parunfold.lps
+      size: '5729304960'
+      time: 731.5286810398102
+swp4-8:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp4-8.mcrl2
+      output_file: /scratch/anna/models3/swp4-8.lps
+      time: 0.10795807838439941
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-8.lps
+      output_file: /scratch/anna/models3/swp4-8.static_only.lps
+      time: 0.036447763442993164
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-8.static_only.lps
+      output_file: /scratch/anna/models3/swp4-8.static_only.lps
+      time: 0.04408407211303711
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.static_only.lps
+      output_file: /scratch/anna/models3/swp4-8.static_only.lps
+      time: 0.016574859619140625
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.static_only.lps
+      output_file: /scratch/anna/models3/swp4-8.static_only.lps
+      time: 0.01880788803100586
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-8.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-8.lps
+      output_file: /scratch/anna/models3/swp4-8.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0019702911376953125
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.0020732879638671875
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-8.default_master.lps
+      output_file: /scratch/anna/models3/swp4-8.default_master.lps
+      time: 0.04552602767944336
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-8.default_master.lps
+      output_file: /scratch/anna/models3/swp4-8.default_master.lps
+      time: 0.05637359619140625
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.default_master.lps
+      output_file: /scratch/anna/models3/swp4-8.default_master.lps
+      time: 0.01989293098449707
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.default_master.lps
+      output_file: /scratch/anna/models3/swp4-8.default_master.lps
+      time: 0.01884913444519043
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-8.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-8.lps
+      output_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n4
+        time: 0.0018155574798583984
+      - options:
+        - -v
+        - -sBBuf
+        - -n4
+        time: 0.0020704269409179688
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      time: 0.05159473419189453
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      time: 0.060924530029296875
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      time: 0.01903676986694336
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      time: 0.01920175552368164
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-8.default_parunfold.lps
+      size: '50128191488'
+      time: 2986.5129544734955
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp4-8.lps
+      output_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n4
+        time: 0.00193023681640625
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n4
+        time: 0.0018656253814697266
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      time: 0.055524587631225586
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      time: 0.07352447509765625
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      time: 0.019370555877685547
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      time: 0.01787590980529785
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp4-8.alternative_parunfold.lps
+      size: '50128191488'
+      time: 2957.8098816871643
+swp8-2:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/swp8-2.mcrl2
+      output_file: /scratch/anna/models3/swp8-2.lps
+      time: 0.10533976554870605
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp8-2.lps
+      output_file: /scratch/anna/models3/swp8-2.static_only.lps
+      time: 0.029912710189819336
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp8-2.static_only.lps
+      output_file: /scratch/anna/models3/swp8-2.static_only.lps
+      time: 0.04457688331604004
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.static_only.lps
+      output_file: /scratch/anna/models3/swp8-2.static_only.lps
+      time: 0.016484498977661133
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.static_only.lps
+      output_file: /scratch/anna/models3/swp8-2.static_only.lps
+      time: 0.016515254974365234
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp8-2.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/swp8-2.lps
+      output_file: /scratch/anna/models3/swp8-2.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n8
+        time: 0.0013895034790039062
+      - options:
+        - -v
+        - -sBBuf
+        - -n8
+        time: 0.0015769004821777344
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp8-2.default_master.lps
+      output_file: /scratch/anna/models3/swp8-2.default_master.lps
+      time: 0.0478060245513916
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp8-2.default_master.lps
+      output_file: /scratch/anna/models3/swp8-2.default_master.lps
+      time: 0.05212712287902832
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.default_master.lps
+      output_file: /scratch/anna/models3/swp8-2.default_master.lps
+      time: 0.019852161407470703
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.default_master.lps
+      output_file: /scratch/anna/models3/swp8-2.default_master.lps
+      time: 0.018499135971069336
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp8-2.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp8-2.lps
+      output_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sDBuf
+        - -n8
+        time: 0.0014426708221435547
+      - options:
+        - -v
+        - -sBBuf
+        - -n8
+        time: 0.0015780925750732422
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      time: 0.04702305793762207
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      time: 0.062355995178222656
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      time: 0.018147945404052734
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      time: 0.0184023380279541
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp8-2.default_parunfold.lps
+      times: timeout
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/swp8-2.lps
+      output_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sDBuf
+        - -n8
+        time: 0.0013577938079833984
+      - options:
+        - -v
+        - -a
+        - -sBBuf
+        - -n8
+        time: 0.001547098159790039
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      time: 0.04938673973083496
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      time: 0.08103322982788086
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      time: 0.01799798011779785
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      time: 0.018365859985351562
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/swp8-2.alternative_parunfold.lps
+      times: timeout
+onoff:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/onoff.mcrl2
+      output_file: /scratch/anna/models3/onoff.lps
+      time: 0.0520169734954834
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/onoff.lps
+      output_file: /scratch/anna/models3/onoff.static_only.lps
+      time: 0.023621559143066406
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/onoff.static_only.lps
+      output_file: /scratch/anna/models3/onoff.static_only.lps
+      time: 0.02475881576538086
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.static_only.lps
+      output_file: /scratch/anna/models3/onoff.static_only.lps
+      time: 0.015779495239257812
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.static_only.lps
+      output_file: /scratch/anna/models3/onoff.static_only.lps
+      time: 0.015995025634765625
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/onoff.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/onoff.lps
+      output_file: /scratch/anna/models3/onoff.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sSys
+        - -n1
+        time: 0.0018129348754882812
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/onoff.default_master.lps
+      output_file: /scratch/anna/models3/onoff.default_master.lps
+      time: 0.02665877342224121
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/onoff.default_master.lps
+      output_file: /scratch/anna/models3/onoff.default_master.lps
+      time: 0.02946758270263672
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.default_master.lps
+      output_file: /scratch/anna/models3/onoff.default_master.lps
+      time: 0.015932798385620117
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.default_master.lps
+      output_file: /scratch/anna/models3/onoff.default_master.lps
+      time: 0.016069650650024414
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/onoff.default_master.lps
+      times: timeout
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/onoff.lps
+      output_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sSys
+        - -n1
+        time: 0.0015473365783691406
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      time: 0.028829097747802734
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      time: 0.03159070014953613
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      time: 0.015831947326660156
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      time: 0.01575160026550293
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/onoff.default_parunfold.lps
+      times: timeout
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/onoff.lps
+      output_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sSys
+        - -n1
+        time: 0.0018551349639892578
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      time: 0.03149867057800293
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      time: 0.03648805618286133
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      time: 0.01610279083251953
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      time: 0.015830516815185547
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/onoff.alternative_parunfold.lps
+      size: '3'
+      time: 0.0715937614440918
+cylinder:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/cylinder.mcrl2
+      output_file: /scratch/anna/models3/cylinder.lps
+      time: 1.6827318668365479
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/cylinder.lps
+      output_file: /scratch/anna/models3/cylinder.static_only.lps
+      time: 1.8445749282836914
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/cylinder.static_only.lps
+      output_file: /scratch/anna/models3/cylinder.static_only.lps
+      time: 2.1443192958831787
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.static_only.lps
+      output_file: /scratch/anna/models3/cylinder.static_only.lps
+      time: 0.1125335693359375
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.static_only.lps
+      output_file: /scratch/anna/models3/cylinder.static_only.lps
+      time: 0.09518671035766602
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/cylinder.static_only.lps
+      size: '1593209'
+      time: 29.577343940734863
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/cylinder.lps
+      output_file: /scratch/anna/models3/cylinder.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(State)
+        - -n4
+        time: 0.002293109893798828
+      - options:
+        - -v
+        - -sState
+        - -n1
+        time: 0.0021309852600097656
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/cylinder.default_master.lps
+      output_file: /scratch/anna/models3/cylinder.default_master.lps
+      time: 1.9246373176574707
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/cylinder.default_master.lps
+      output_file: /scratch/anna/models3/cylinder.default_master.lps
+      time: 2.3160476684570312
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.default_master.lps
+      output_file: /scratch/anna/models3/cylinder.default_master.lps
+      time: 0.0956430435180664
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.default_master.lps
+      output_file: /scratch/anna/models3/cylinder.default_master.lps
+      time: 0.11251378059387207
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/cylinder.default_master.lps
+      size: '1593209'
+      time: 16.973909378051758
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/cylinder.lps
+      output_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(State)
+        - -n4
+        time: 0.0017888545989990234
+      - options:
+        - -v
+        - -sState
+        - -n1
+        time: 0.002034425735473633
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      time: 1.9622547626495361
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      time: 2.3459954261779785
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      time: 0.09499573707580566
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      time: 0.11540341377258301
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/cylinder.default_parunfold.lps
+      size: '1593209'
+      time: 19.75586771965027
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/cylinder.lps
+      output_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sList(State)
+        - -n4
+        time: 0.0019707679748535156
+      - options:
+        - -v
+        - -a
+        - -sState
+        - -n1
+        time: 0.0020186901092529297
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      time: 2.3685109615325928
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      time: 2.1394267082214355
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      time: 0.11590170860290527
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      time: 0.11681342124938965
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/cylinder.alternative_parunfold.lps
+      size: '1593209'
+      time: 18.62451434135437
+sla7:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/sla7.mcrl2
+      output_file: /scratch/anna/models3/sla7.lps
+      time: 0.23276185989379883
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla7.lps
+      output_file: /scratch/anna/models3/sla7.static_only.lps
+      time: 0.05030059814453125
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla7.static_only.lps
+      output_file: /scratch/anna/models3/sla7.static_only.lps
+      time: 0.06426119804382324
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.static_only.lps
+      output_file: /scratch/anna/models3/sla7.static_only.lps
+      time: 0.020760774612426758
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.static_only.lps
+      output_file: /scratch/anna/models3/sla7.static_only.lps
+      time: 0.020113706588745117
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla7.static_only.lps
+      size: '7918'
+      time: 2.0567426681518555
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/sla7.lps
+      output_file: /scratch/anna/models3/sla7.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n7
+        time: 0.0020220279693603516
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla7.default_master.lps
+      output_file: /scratch/anna/models3/sla7.default_master.lps
+      time: 0.054704904556274414
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla7.default_master.lps
+      output_file: /scratch/anna/models3/sla7.default_master.lps
+      time: 0.08183574676513672
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.default_master.lps
+      output_file: /scratch/anna/models3/sla7.default_master.lps
+      time: 0.024054288864135742
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.default_master.lps
+      output_file: /scratch/anna/models3/sla7.default_master.lps
+      time: 0.02160501480102539
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla7.default_master.lps
+      size: '7918'
+      time: 2.419856548309326
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla7.lps
+      output_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n7
+        time: 0.0017969608306884766
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      time: 0.06266546249389648
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      time: 0.0890965461730957
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      time: 0.025571346282958984
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      time: 0.02456951141357422
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla7.default_parunfold.lps
+      size: '7918'
+      time: 2.401935338973999
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla7.lps
+      output_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sList(Message)
+        - -n7
+        time: 0.0019583702087402344
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      time: 0.0661015510559082
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      time: 0.09624457359313965
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      time: 0.02444624900817871
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      time: 0.02078104019165039
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla7.alternative_parunfold.lps
+      size: '7918'
+      time: 2.3836328983306885
+sla10:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/sla10.mcrl2
+      output_file: /scratch/anna/models3/sla10.lps
+      time: 0.22971892356872559
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla10.lps
+      output_file: /scratch/anna/models3/sla10.static_only.lps
+      time: 0.04056668281555176
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla10.static_only.lps
+      output_file: /scratch/anna/models3/sla10.static_only.lps
+      time: 0.06600642204284668
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.static_only.lps
+      output_file: /scratch/anna/models3/sla10.static_only.lps
+      time: 0.02105855941772461
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.static_only.lps
+      output_file: /scratch/anna/models3/sla10.static_only.lps
+      time: 0.021160364151000977
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla10.static_only.lps
+      size: '238931'
+      time: 30.726452827453613
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/sla10.lps
+      output_file: /scratch/anna/models3/sla10.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n10
+        time: 0.0019707679748535156
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla10.default_master.lps
+      output_file: /scratch/anna/models3/sla10.default_master.lps
+      time: 0.055031776428222656
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla10.default_master.lps
+      output_file: /scratch/anna/models3/sla10.default_master.lps
+      time: 0.08809304237365723
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.default_master.lps
+      output_file: /scratch/anna/models3/sla10.default_master.lps
+      time: 0.02690410614013672
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.default_master.lps
+      output_file: /scratch/anna/models3/sla10.default_master.lps
+      time: 0.023245811462402344
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla10.default_master.lps
+      size: '238931'
+      time: 19.17157483100891
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla10.lps
+      output_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n10
+        time: 0.0015492439270019531
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      time: 0.067291259765625
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      time: 0.09389948844909668
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      time: 0.03094339370727539
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      time: 0.027978897094726562
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla10.default_parunfold.lps
+      size: '238931'
+      time: 22.8997802734375
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla10.lps
+      output_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sList(Message)
+        - -n10
+        time: 0.0015952587127685547
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      time: 0.15535926818847656
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      time: 0.19744396209716797
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      time: 0.0338287353515625
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      time: 0.029265165328979492
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla10.alternative_parunfold.lps
+      size: '238931'
+      time: 17.028929471969604
+sla13:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/sla13.mcrl2
+      output_file: /scratch/anna/models3/sla13.lps
+      time: 0.25002503395080566
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla13.lps
+      output_file: /scratch/anna/models3/sla13.static_only.lps
+      time: 0.0509645938873291
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla13.static_only.lps
+      output_file: /scratch/anna/models3/sla13.static_only.lps
+      time: 0.06705236434936523
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.static_only.lps
+      output_file: /scratch/anna/models3/sla13.static_only.lps
+      time: 0.020819425582885742
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.static_only.lps
+      output_file: /scratch/anna/models3/sla13.static_only.lps
+      time: 0.01777505874633789
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla13.static_only.lps
+      times: timeout
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/sla13.lps
+      output_file: /scratch/anna/models3/sla13.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n13
+        time: 0.0014224052429199219
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla13.default_master.lps
+      output_file: /scratch/anna/models3/sla13.default_master.lps
+      time: 0.05536508560180664
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla13.default_master.lps
+      output_file: /scratch/anna/models3/sla13.default_master.lps
+      time: 0.0963740348815918
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.default_master.lps
+      output_file: /scratch/anna/models3/sla13.default_master.lps
+      time: 0.028673410415649414
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.default_master.lps
+      output_file: /scratch/anna/models3/sla13.default_master.lps
+      time: 0.027344703674316406
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla13.default_master.lps
+      size: '6693054'
+      time: 430.5336289405823
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla13.lps
+      output_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Message)
+        - -n13
+        time: 0.0019812583923339844
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      time: 0.07531905174255371
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      time: 0.13040852546691895
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      time: 0.03680706024169922
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      time: 0.03458285331726074
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla13.default_parunfold.lps
+      size: '6693054'
+      time: 410.16607308387756
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/sla13.lps
+      output_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sList(Message)
+        - -n13
+        time: 0.0017807483673095703
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      time: 0.8893640041351318
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      time: 0.9262146949768066
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      time: 0.11306285858154297
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      time: 0.08205842971801758
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/sla13.alternative_parunfold.lps
+      size: '6693054'
+      time: 328.0449857711792
+wms:
+  mcrl22lps:
+    mcrl22lps:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: mcrl22lps
+      options: []
+      input_file: /scratch/anna/models3/wms.mcrl2
+      output_file: /scratch/anna/models3/wms.lps
+      time: 0.4914710521697998
+  static_only:
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/wms.lps
+      output_file: /scratch/anna/models3/wms.static_only.lps
+      time: 0.054735422134399414
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/wms.static_only.lps
+      output_file: /scratch/anna/models3/wms.static_only.lps
+      time: 0.07700657844543457
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.static_only.lps
+      output_file: /scratch/anna/models3/wms.static_only.lps
+      time: 0.024503707885742188
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.static_only.lps
+      output_file: /scratch/anna/models3/wms.static_only.lps
+      time: 0.02415299415588379
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/wms.static_only.lps
+      size: '155034776'
+      time: 16.230984449386597
+  default_master:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      input_file: /scratch/anna/models3/wms.lps
+      output_file: /scratch/anna/models3/wms.default_master.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Job)
+        - -n1
+        time: 0.0019669532775878906
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/wms.default_master.lps
+      output_file: /scratch/anna/models3/wms.default_master.lps
+      time: 0.07112383842468262
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/wms.default_master.lps
+      output_file: /scratch/anna/models3/wms.default_master.lps
+      time: 0.09588956832885742
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.default_master.lps
+      output_file: /scratch/anna/models3/wms.default_master.lps
+      time: 0.02761101722717285
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.default_master.lps
+      output_file: /scratch/anna/models3/wms.default_master.lps
+      time: 0.021224498748779297
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/wms.default_master.lps
+      size: '155034776'
+      time: 16.23804807662964
+  default_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/wms.lps
+      output_file: /scratch/anna/models3/wms.default_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -sList(Job)
+        - -n1
+        time: 0.0017080307006835938
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/wms.default_parunfold.lps
+      output_file: /scratch/anna/models3/wms.default_parunfold.lps
+      time: 0.07344269752502441
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/wms.default_parunfold.lps
+      output_file: /scratch/anna/models3/wms.default_parunfold.lps
+      time: 0.09760904312133789
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.default_parunfold.lps
+      output_file: /scratch/anna/models3/wms.default_parunfold.lps
+      time: 0.0250852108001709
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.default_parunfold.lps
+      output_file: /scratch/anna/models3/wms.default_parunfold.lps
+      time: 0.02552485466003418
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/wms.default_parunfold.lps
+      size: '155034776'
+      time: 16.64241600036621
+  alternative_parunfold:
+    lpsparunfold:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      input_file: /scratch/anna/models3/wms.lps
+      output_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      unfoldings:
+      - options:
+        - -v
+        - -a
+        - -sList(Job)
+        - -n1
+        time: 0.0018494129180908203
+    lpssuminst:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssuminst
+      options:
+      - -v
+      - -f
+      input_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      time: 0.0748145580291748
+    lpsconstelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsconstelm
+      options:
+      - -vsft
+      input_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      time: 0.1089940071105957
+    lpsparelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpsparelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      time: 0.02578258514404297
+    lpssumelm:
+      mcrl2_path: /scratch/anna/MCRL2_parunfold/build/stage/bin/
+      tool: lpssumelm
+      options:
+      - -v
+      input_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      output_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      time: 0.023550748825073242
+    reachability:
+      mcrl2_path: /scratch/anna/MCRL2_master/build/stage/bin/
+      tool: lpsreach
+      options:
+      - -v
+      - --print-exact
+      - -m64
+      - --cached
+      - --groups=simple
+      input_file: /scratch/anna/models3/wms.alternative_parunfold.lps
+      size: '155034776'
+      time: 16.423224449157715
